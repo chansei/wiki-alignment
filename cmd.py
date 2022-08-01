@@ -1,6 +1,6 @@
+import datetime
 import json
 import os
-from datetime import datetime
 
 import requests
 from discord.ext import commands
@@ -12,7 +12,7 @@ api_url_auth = "https://api.wikiwiki.jp/restapitest/auth"
 api_url_page = "https://api.wikiwiki.jp/restapitest/page/外部ニュース"
 
 # ------ api value ------
-pwd = os.environ["pwd"]
+pwd = os.getenv('pwd')
 notice_category = [1003571877182193745]
 
 # ------ global value ------

@@ -6,7 +6,7 @@ import traceback
 import discord
 from discord.ext import commands
 
-TOKEN = os.environ["token"]
+TOKEN = os.getenv('token')
 
 INITIAL_EXTENSIONS = [
     'cmd'

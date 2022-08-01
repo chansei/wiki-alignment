@@ -3,7 +3,6 @@ import os
 
 import requests
 from requests.exceptions import Timeout
-from urllib3 import Timeout
 
 
 def api_auth(url, pwd):

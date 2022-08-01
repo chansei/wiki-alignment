@@ -5,10 +5,15 @@ import traceback
 
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
+
+# ------ .envファイルからロードするかデフォルトの環境変数を利用 ------
+try:
+    load_dotenv()
+except Exception:
+    print("using default environ")
 
 TOKEN = os.getenv('token')
-
-print(TOKEN)
 
 INITIAL_EXTENSIONS = [
     'cmd'

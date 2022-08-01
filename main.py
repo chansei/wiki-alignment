@@ -8,6 +8,8 @@ from discord.ext import commands
 
 TOKEN = os.getenv('token')
 
+print(TOKEN)
+
 INITIAL_EXTENSIONS = [
     'cmd'
 ]

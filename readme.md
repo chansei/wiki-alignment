@@ -3,10 +3,10 @@ Discordのテキストチャンネルに投稿された内容をwikiwikiの特�
 
 ## How to use
 1. パラメーターを書き換え
- ```token```:botのtoken
- ```pwd```:wikiwikiの管理パスワード
- ```api_url_page```:出力したいwikiwikiのページ
- ```notice_category```:出力したいDiscordのテキストチャンネルが属するカテゴリーID
+ ```token```:botのtoken  
+ ```pwd```:wikiwikiの管理パスワード  
+ ```api_url_page```:出力したいwikiwikiのページ  
+ ```notice_category```:出力したいDiscordのテキストチャンネルが属するカテゴリーID  
 1. "main.py"を起動
 
 ## Demo

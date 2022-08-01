@@ -1,2 +1,2 @@
 requests
-pycord==0.1.1
+discord==1.5.1

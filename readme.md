@@ -2,7 +2,7 @@
 Discordのテキストチャンネルに投稿された内容をwikiwikiの特定ページへ出力するモジュール
 
 ## How to use
-1. パラメーターを書き換え
+1. パラメーターを書き換え  
  ```token```:botのtoken  
  ```pwd```:wikiwikiの管理パスワード  
  ```api_url_page```:出力したいwikiwikiのページ  

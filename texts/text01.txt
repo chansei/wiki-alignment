@@ -2,7 +2,17 @@
 #contents
 -----
 * 外部ニュース
-公式Discordサーバー、アジア(APAC)公式Discordサーバー、BlitzPostの各Discordサーバーにおけるアナウンスチャンネルに投稿された内容のうち、最新の5件を表示しています。
+以下のDiscordサーバーにおける一部のチャンネルに投稿された内容のうち、最新5件を表示しています。
+
+- WoT Blitz Official(公式サーバー)
+- WOTB APAC Official(APAC公式サーバー)
+- Blitz Post*
+- Blitz Post Global Offensive*
+- Droodles Blitz*
+- Hell's Angel*
+
+※*の表示されているサーバーはリークサーバーであり、確実な情報を保証するものではありません。
+
 &color(red){''このページは自動更新されます''};。内容は定期的に上書きされるので、レイアウトの変更要望などは[[運営掲示板]]までお願いします。
 
 なお仕様上、一部の内容は正しく出力されません。

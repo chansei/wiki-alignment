@@ -11,9 +11,17 @@ https://discord.gg/A8RmzVsFNm
 - Blitz Post Global Offensive
 https://discord.gg/wH3VnnCk4k
 
+- Droodles Blitz
+https://discord.gg/aFy9cYJEmw
+
+- Hell's Angel
+https://discord.gg/AbzQmugSb7
+
+
 * その他
 - WoTBWiki公式Discordでも同様の内容を配信しています。
 https://discord.gg/fNuhbVugnQ
+- このページはREST APIを用いて更新しています。([[参考>https://wikiwiki.jp/sample/REST%20API]])
 - 連携内容の追加要望は[[運営掲示板]]までお願いします。
 
 * コメント

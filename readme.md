@@ -10,10 +10,12 @@ Discordのテキストチャンネルに投稿された内容をwikiwikiの特�
 1. "main.py"を起動
 
 ## Demo
-https://wikiwiki.jp/restapitest/%E5%A4%96%E9%83%A8%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9
+https://wikiwiki.jp/restapitest/%E5%A4%96%E9%83%A8%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9 (デバッグ用)
+https://wikiwiki.jp/wotblitz/%E5%A4%96%E9%83%A8%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9 (運用中)
 
 ## Others
 - 古のdiscord.pyをベースとしているのでいつ動かなくなるか分かりません
+- メンションは除去、文字修飾はwiki構文に修正するようにしていますが、不完全で意図しない表示になることがあります
 
 ## Link
 - [REST API - wikiwiki.jp](https://wikiwiki.jp/sample/REST%20API)

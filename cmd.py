@@ -5,12 +5,12 @@ import re
 
 import requests
 from discord.ext import commands
-
+from urllib.parse import urlparse
 import wiki
 
 # ------ api url ------
-api_url_auth = "https://api.wikiwiki.jp/restapitest/auth"
-api_url_page = "https://api.wikiwiki.jp/restapitest/page/外部ニュース"
+api_url_auth = "https://api.wikiwiki.jp/wotblitz/auth"
+api_url_page = "https://api.wikiwiki.jp/wotblitz/page/外部ニュース"
 
 # ------ api value ------
 pwd = os.getenv('pwd')
@@ -26,6 +26,7 @@ def setup(bot):
 # ------ other method ------
 def opt_txt(text):
     text = text.replace('**',"''") # 太字の構文変更(**->'')
+    text = text.replace('*', "'''") # 斜字の構文変更(**->''')
     text = text.replace('__',"%%%") # 下線の構文変更(__->%%%)
     text = re.sub('<#(.*?)>|<:(.*?)> ','',text) # メンションと(サ－バー)絵文字の除去
     return text
@@ -54,15 +55,11 @@ class cmd(commands.Cog):
                 text_tmp = opt_txt(message.content)
                 text += ("***"+(message.created_at+datetime.timedelta(hours=9)).strftime('%Y/%m/%d %H:%M')+"\n") # 見出し
                 for attachment in message.attachments: # 画像
-                    text += ("&attachref("+attachment.url+",nolink,50%);\n")
+                    _url = urlparse(attachment.url)
+                    url = f"{_url.scheme}://{_url.netloc}{_url.path}"
+                    text += ("&attachref("+url+",zoom,200x360);\n")
                 text += (text_tmp+"\n----\n") # 本文
             # print(text)
         with open("texts/text02.txt", "r", encoding="utf-8") as f: # フッター部分
             text += f.read()
         print(wiki.api_put(api_url_page, api_token, text))
-
-
-
-
-
-

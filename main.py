@@ -1,5 +1,5 @@
 import asyncio
-import cmd
+import discord_cmd
 import os
 import traceback
 
@@ -16,7 +16,7 @@ except Exception:
 TOKEN = os.getenv('token')
 
 INITIAL_EXTENSIONS = [
-    'cmd'
+    'discord_cmd'
 ]
 
 bot = commands.Bot(command_prefix="-", help_command=None, intents=discord.Intents.all())
@@ -26,6 +26,7 @@ for cog in INITIAL_EXTENSIONS:
         bot.load_extension(cog)
     except Exception:
         traceback.print_exc()
+
 
 @bot.event
 async def on_ready():
